@@ -1,0 +1,60 @@
+@charset "UTF-8";
+
+@import "base/functions";
+// @import "base/variables";
+// @import "base/mixins";
+// @import "base/placeholders";
+
+// @import "core/reset";
+// @import "core/typography";
+// @import "core/basic";
+
+// @import "layout/main";
+
+* {
+    box-sizing: border-box;
+}
+
+.btn {
+    border: none;
+    padding: none;
+    cursor: pointer;
+    padding: 1em;
+    width: 6em;
+    height: 9em;
+
+    &--drumpad {
+        background: #888;
+    }
+}
+
+.drumpad__part {
+    display: inline-block;
+    margin: 0 2em;
+    text-align: center;
+}
+
+.sequencer__header_cell--active,
+.sequencer__cell--active {
+  background: #666;
+}
+
+.sequencer__header_cell,
+.sequencer__cell {
+  font-weight: 300;
+  padding: em(6px, 14px);
+  text-align: right;
+  border-bottom: 1px solid #606060;
+}
+
+.sequencer__cell button {
+  background: #999;
+  border: none;
+  padding: 0;
+  width: 2em;
+  height: 2em;
+}
+
+.sequencer__cell--on button {
+  background: green;
+}

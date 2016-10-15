@@ -1,0 +1,32 @@
+{
+  "name": "webaudio_band",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev:tmpl": "cp src/index.html public/index.html",
+    "dev:css": "node-sass src/scss/style.scss public/static/css/bundle.css --watch --source-map true",
+    "dev:js": "webpack -d --watch --display-error-details",
+    "dev": "npm run build:tmpl & npm run dev:css & npm run dev:js",
+    "build:tmpl": "cp src/index.html public/index.html",
+    "build:css": "node-sass src/scss/style.scss public/static/css/bundle.css --output-style compressed",
+    "build:js": "webpack -p",
+    "build": "npm run build:tmpl && build:css && npm run build:js",
+    "start": "npm run dev & node_modules/http-server/bin/http-server public"
+  },
+  "author": "Eduardo Shiota Yasuda",
+  "license": "ISC",
+  "dependencies": {
+    "babel-loader": "^6.2.5",
+    "babel-preset-es2015": "^6.14.0",
+    "babel-preset-react": "^6.11.1",
+    "http-server": "^0.9.0",
+    "keycode": "^2.1.4",
+    "node-sass": "^3.8.0",
+    "react": "^15.3.1",
+    "react-dom": "^15.3.1",
+    "react-redux": "^4.4.5",
+    "redux": "^3.6.0",
+    "webpack": "^1.13.2"
+  }
+}
