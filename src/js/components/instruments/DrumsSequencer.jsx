@@ -33,9 +33,26 @@ class DrumsSequencer extends Sequencer {
 DrumsSequencer.defaultProps = {
     type: 'drums',
     tracks : [{
+        name: 'Kick',
         type: 'kick'
     }, {
+        name: 'Snare',
         type: 'snare'
+    }, {
+        name: 'Hihat (open)',
+        type: 'hihat_open'
+    }, {
+        name: 'Hihat (closed)',
+        type: 'hihat_closed'
+    }, {
+        name: 'High Tom',
+        type: 'tom_hi'
+    }, {
+        name: 'Low Tom',
+        type: 'tom_low'
+    }, {
+        name: 'Crash',
+        type: 'crash'
     }]
 };
 

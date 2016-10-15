@@ -70,6 +70,7 @@ class Sequencer extends React.Component {
                         {this.props.tracks.map((item, i) => {
                             return (
                                 <SequencerTrack {...this.props}
+                                    name={item.name}
                                     type={item.type}
                                     playSound={this.playSound.bind(this, item.type)}
                                     key={i}

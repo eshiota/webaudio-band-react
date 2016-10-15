@@ -38,7 +38,7 @@ class SequencerTrack extends React.Component {
 
         return (
             <tr>
-                <th>{this.props.type}</th>
+                <th>{this.props.name}</th>
                 {sequencerCells}
             </tr>
         );
